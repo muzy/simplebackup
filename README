@@ -1,3 +1,25 @@
 Simple Backup Script
 
 (c) Sebastian Muszytowski
+
+Requirements:
+
+-> Running ssh-deamon on the host system
+-> Available ssh-client on the backup system
+-> SSH Key-Login with a non-passworded key
+-> Configure the script (in the header of simplebackup.sh)
+
+This script currently backup the following directorys/files:
+
+-> PostgrSQL 
+-> OpenLDAP
+-> Cronjobs (/var/spool/cron)
+-> Confguration files (/etc)
+-> Mails (/var/spool/mail)
+-> Websites (/var/www)
+
+You can easily delete some services by commenting the line.
+Adding a service should be as easy as commenting a line.
+
+
+
